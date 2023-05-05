@@ -1,0 +1,114 @@
+//colores
+$color-fondo: #585A6A;
+$color-primario: #7A9999;
+$color-secundario: #9DC3C3;
+$color-terciario: #DEF5F5;
+
+
+//variables responsive
+$color-resp1: #F0D1F0;
+$color-resp2: #EAA9D1;
+$color-resp3: #582D45;
+$color-resp4: #344444;
+
+
+//tamaños
+
+$font-small-size-resp: 10px;
+$font-regular-size-resp: 15px;
+$font-big-size-resp: 1S7px;
+$paddingok-resp: 5px;
+
+$font-small-size: 20px;
+$font-regular-size: 25px;
+$font-big-size: 27px;
+$paddingok: 60px;
+
+
+//anidacion test
+
+//servicios
+
+.souvenirimg, .vidrieraimg, .viniloimg{
+    width: 300px;
+    height: 300px;
+    margin-left: 10px;
+ 
+}
+@media (min-width:1023px){
+    header, footer{display: flex;
+
+        
+    
+}
+
+
+.parrafo
+{
+    font-size: 23px;
+    font-style: initial;
+    margin-top: 60px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+    
+    .grids{
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+        "header"
+        "main"
+        "footer" ;
+ 
+    }
+
+    .cuerpo{
+        display: grid;
+        grid-template-columns: 100% 100%;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "imagen" 
+        "presentacion";
+    
+    }
+
+    .imagen{grid-area: imagen;}
+    .presentacion{grid-area: presentacion;}
+
+
+.servicios{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+   grid-template-rows: auto auto auto auto auto auto;
+   grid-template-areas: 
+   "titulop titulop titulop titulop"
+   "parrafo2 parrafo2 parrafo2 parrafo2"
+   "subtitulo subtitulo subtitulo subtitulo"
+   "bolsita1 bolsita2 bolsita3 cuadro1"
+   "cuadro2 qatar vidriera1 vidriera2"
+   "vidriera3 vidriera6 vidriera7 vinilo1";
+
+}
+
+.titulop{grid-area: titulop;}
+.parrafo2{grid-area: parrafo2;}
+.subtitulo{grid-area: subtitulo;}
+img#bolsita1{grid-area: bolsita1;}
+img#bolsita2{grid-area: bolsita2;}
+img#bolsita3{grid-area: bolsita3;}
+img#cuadro1{grid-area: cuadro1;}
+img#cuadro2{grid-area: cuadro2;}
+img#qatar{grid-area: qatar;}
+img#vidriera1{grid-area: vidriera1;}
+img#vidriera2{grid-area: vidriera2;}
+img#vidriera3{grid-area: vidriera3;}
+img#vidriera6{grid-area: vidriera6;}
+img#vidriera7{grid-area: vidriera7;}
+img#vinilo1{grid-area: vinilo1;}
+
+
+}
